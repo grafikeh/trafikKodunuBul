@@ -1,0 +1,77 @@
+html,
+body {
+  height: 100%; /* Sayfa yüksekliğini %100 olarak ayarlar, böylece içerik tam sayfayı kaplar. */
+  margin: 0; /* Sayfa ve body elementlerinin varsayılan kenar boşluklarını kaldırır. */
+  display: flex; /* İçeriği ortalamak için flexbox düzenini kullanır. */
+  justify-content: center; /* İçeriği yatayda ortalar. */
+  align-items: center; /* İçeriği dikeyde ortalar. */
+  background-color: #000; /* Sayfanın arka plan rengini siyah yapar. */
+  color: #fff; /* Sayfa üzerindeki metin rengini beyaz yapar. */
+  font-family: Arial, sans-serif; /* Sayfadaki yazı tipi olarak Arial ve yedek olarak sans-serif kullanır. */
+}
+
+.container {
+  width: 200px; /* Konteynerin genişliğini 200 piksel olarak ayarlar. */
+  position: absolute; /* Konteyneri sayfa üzerinde kesin bir konuma yerleştirir. */
+  left: 50%; /* Konteyneri yatayda sayfanın ortasına hizalar. */
+  top: 35%; /* Konteyneri dikeyde sayfanın %30 yukarısına hizalar. */
+  transform: translate(
+    -50%,
+    -30%
+  ); /* Konteyneri tam olarak ortalamak için translate kullanır. */
+  text-align: center; /* Konteyner içindeki metinleri ortalar. */
+  height: 370px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.city-name {
+  font-size: 24px; /* Şehir adının yazı boyutunu 24 piksel olarak ayarlar. */
+  margin-bottom: 10px; /* Şehir adı ile aşağıdaki içerik arasında 10 piksel boşluk bırakır. */
+  background-color: #b61b1b; /* Şehir adı kutusunun arka plan rengini kırmızı yapar. */
+  padding: 5px; /* Şehir adı kutusunun iç kenar boşluklarını 5 piksel olarak ayarlar. */
+  border-radius: 15px; /* Şehir adı kutusunun kenarlarını yuvarlaklaştırır. */
+  font-weight: 600; /* Şehir adı yazısını kalın yapar. */
+}
+  
+#traffic-code {
+  padding: 10px; /* Trafik kodu input alanının iç kenar boşluklarını 10 piksel olarak ayarlar. */
+  font-size: 40px; /* Trafik kodu input alanının yazı boyutunu 40 piksel yapar. */
+  margin: 20px; /* Trafik kodu input alanının etrafına 20 piksel boşluk ekler. */
+  width: 40%; /* Trafik kodu input alanının genişliğini %40 olarak ayarlar. */
+  height: 50px; /* Trafik kodu input alanının yüksekliğini 50 piksel yapar. */
+  box-sizing: border-box; /* Padding ve border'ın genişliğe dahil edilmesini sağlar. */
+  border-radius: 5px; /* Trafik kodu input alanının kenarlarını yuvarlaklaştırır. */
+  border: 2px solid bisque; /* Trafik kodu input alanının kenarını bisque rengiyle belirginleştirir. */
+  background-color: bisque; /* Trafik kodu input alanının arka plan rengini bisque yapar. */
+  color: #000; /* Trafik kodu input alanındaki metnin rengini siyah yapar. */
+  text-align: center; /* Trafik kodu input alanındaki metni ortalar. */
+  font-weight: 600; /* Trafik kodu input alanındaki metni kalın yapar. */
+}
+
+button {
+  margin: 7px; /* Butonun etrafına 7 piksel boşluk ekler. */
+  padding: 11px; /* Butonun iç kenar boşluklarını 11 piksel olarak ayarlar. */
+  font-size: 18px; /* Butonun yazı boyutunu 18 piksel yapar. */
+  cursor: pointer; /* Buton üzerine gelindiğinde fare imlecini işaretçiye çevirir. */
+  border-radius: 5px; /* Butonun kenarlarını yuvarlaklaştırır. */
+  border: none; /* Butonun kenar çizgisini kaldırır. */
+  background-color: #3067e8; /* Butonun arka plan rengini mavi yapar. */
+  color: #fff; /* Butonun yazı rengini beyaz yapar. */
+}
+
+button:hover {
+  background-color: #2154c9; /* Buton üzerine gelindiğinde arka plan rengini koyu maviye çevirir. */
+}
+
+.fa-car,
+.fa-magnifying-glass {
+  font-size: 30px; /* İkonların boyutunu 30 piksel yapar. */
+  color: #a3a5a9; /* İkonların rengini gri yapar. */
+}
+
+.result {
+  margin-top: 20px; /* Sonuç mesajının üst kısmına 20 piksel boşluk ekler. */
+  font-size: 20px; /* Sonuç mesajının yazı boyutunu 20 piksel yapar. */
+}
